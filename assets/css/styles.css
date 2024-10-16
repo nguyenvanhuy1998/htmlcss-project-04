@@ -49,6 +49,23 @@ a {
     cursor: pointer;
 }
 
+.section-heading {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--header-bg);
+
+}
+
+.section-desc {
+    margin-top: 18px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    color: #575F66;
+}
+
 /* Header */
 .header {
     min-height: 100vh;
@@ -229,4 +246,86 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+
+/* Service */
+.service {
+    padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+
+.service__desc {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service__list {
+    margin-bottom: 55px;
+}
+
+.service-item {
+    padding: 22px;
+    width: 470px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    gap: 19px;
+    transition: .25s;
+}
+
+.service-item:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px 0px #0000000D;
+
+}
+.service-item:hover .service-item__icon {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.service-item__icon {
+    color: var(--header-bg);
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #EFF6FD;
+
+}
+
+.service-item__heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.27;
+    color: var(--header-bg);
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #575F66;
 }
