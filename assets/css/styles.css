@@ -115,7 +115,7 @@ a {
 }
 
 
-.action__login,
+.header-action__login,
 .navbar__link {
     padding: 4px 21px;
     font-size: 1.6rem;
@@ -144,7 +144,17 @@ a {
     color: #fff;
 }
 
-.action__signup {
+
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    margin-right: 7px;
+}
+
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
     font-size: 1.6rem;
